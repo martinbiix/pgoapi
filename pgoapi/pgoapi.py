@@ -173,6 +173,7 @@ class PGoApi:
         request.get_inventory()
         request.check_awarded_badges()
         request.download_settings()
+        request.get_inbox(is_history=True)
         response = request.call()
 
         self.log.info('Finished RPC login sequence (iOS app simulation)')
