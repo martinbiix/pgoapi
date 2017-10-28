@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/inventory/exclusive_ticket_info.proto',
   package='pogoprotos.inventory',
   syntax='proto3',
-  serialized_pb=_b('\n0pogoprotos/inventory/exclusive_ticket_info.proto\x12\x14pogoprotos.inventory\"\xc6\x01\n\x13\x45xclusiveTicketInfo\x12\x11\n\traid_seed\x18\x01 \x01(\x03\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x15\n\rstart_time_ms\x18\x04 \x01(\x03\x12\x13\n\x0b\x65nd_time_ms\x18\x05 \x01(\x03\x12\x11\n\timage_url\x18\x06 \x01(\t\x12\x10\n\x08latitude\x18\x07 \x01(\x01\x12\x11\n\tlongitude\x18\x08 \x01(\x01\x12\x10\n\x08gym_name\x18\t \x01(\t\x12\x15\n\rspawn_time_ms\x18\n \x01(\x03\x62\x06proto3')
+  serialized_pb=_b('\n0pogoprotos/inventory/exclusive_ticket_info.proto\x12\x14pogoprotos.inventory\"\xdc\x01\n\x13\x45xclusiveTicketInfo\x12\x11\n\traid_seed\x18\x01 \x01(\x03\x12\x0f\n\x07\x66ort_id\x18\x02 \x01(\t\x12\x15\n\rstart_time_ms\x18\x04 \x01(\x03\x12\x13\n\x0b\x65nd_time_ms\x18\x05 \x01(\x03\x12\x11\n\timage_url\x18\x06 \x01(\t\x12\x10\n\x08latitude\x18\x07 \x01(\x01\x12\x11\n\tlongitude\x18\x08 \x01(\x01\x12\x10\n\x08gym_name\x18\t \x01(\t\x12\x15\n\rspawn_time_ms\x18\n \x01(\x03\x12\x14\n\x0cis_cancelled\x18\x0b \x01(\x08\x62\x06proto3')
 )
 
 
@@ -95,6 +95,13 @@ _EXCLUSIVETICKETINFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='is_cancelled', full_name='pogoprotos.inventory.ExclusiveTicketInfo.is_cancelled', index=9,
+      number=11, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -108,7 +115,7 @@ _EXCLUSIVETICKETINFO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=75,
-  serialized_end=273,
+  serialized_end=295,
 )
 
 DESCRIPTOR.message_types_by_name['ExclusiveTicketInfo'] = _EXCLUSIVETICKETINFO
