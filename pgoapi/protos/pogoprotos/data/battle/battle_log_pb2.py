@@ -22,75 +22,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/battle/battle_log.proto',
   package='pogoprotos.data.battle',
   syntax='proto3',
-  serialized_pb=_b('\n\'pogoprotos/data/battle/battle_log.proto\x12\x16pogoprotos.data.battle\x1a)pogoprotos/data/battle/battle_state.proto\x1a(pogoprotos/data/battle/battle_type.proto\x1a*pogoprotos/data/battle/battle_action.proto\"\xa6\x03\n\tBattleLog\x12\x32\n\x05state\x18\x01 \x01(\x0e\x32#.pogoprotos.data.battle.BattleState\x12\x37\n\x0b\x62\x61ttle_type\x18\x02 \x01(\x0e\x32\".pogoprotos.data.battle.BattleType\x12\x11\n\tserver_ms\x18\x03 \x01(\x03\x12<\n\x0e\x62\x61ttle_actions\x18\x04 \x03(\x0b\x32$.pogoprotos.data.battle.BattleAction\x12!\n\x19\x62\x61ttle_start_timestamp_ms\x18\x05 \x01(\x03\x12\x1f\n\x17\x62\x61ttle_end_timestamp_ms\x18\x06 \x01(\x03\"N\n\x05State\x12\x0f\n\x0bSTATE_UNSET\x10\x00\x12\n\n\x06\x41\x43TIVE\x10\x01\x12\x0b\n\x07VICTORY\x10\x02\x12\x0c\n\x08\x44\x45\x46\x45\x41TED\x10\x03\x12\r\n\tTIMED_OUT\x10\x04\"G\n\nBattleType\x12\x15\n\x11\x42\x41TTLE_TYPE_UNSET\x10\x00\x12\n\n\x06NORMAL\x10\x01\x12\x0c\n\x08TRAINING\x10\x02\x12\x08\n\x04RAID\x10\x03\x62\x06proto3')
+  serialized_pb=_b('\n\'pogoprotos/data/battle/battle_log.proto\x12\x16pogoprotos.data.battle\x1a)pogoprotos/data/battle/battle_state.proto\x1a(pogoprotos/data/battle/battle_type.proto\x1a*pogoprotos/data/battle/battle_action.proto\"\x8d\x02\n\tBattleLog\x12\x32\n\x05state\x18\x01 \x01(\x0e\x32#.pogoprotos.data.battle.BattleState\x12\x37\n\x0b\x62\x61ttle_type\x18\x02 \x01(\x0e\x32\".pogoprotos.data.battle.BattleType\x12\x11\n\tserver_ms\x18\x03 \x01(\x03\x12<\n\x0e\x62\x61ttle_actions\x18\x04 \x03(\x0b\x32$.pogoprotos.data.battle.BattleAction\x12!\n\x19\x62\x61ttle_start_timestamp_ms\x18\x05 \x01(\x03\x12\x1f\n\x17\x62\x61ttle_end_timestamp_ms\x18\x06 \x01(\x03\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_battle_dot_battle__state__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_battle_dot_battle__type__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_battle_dot_battle__action__pb2.DESCRIPTOR,])
 
 
-
-_BATTLELOG_STATE = _descriptor.EnumDescriptor(
-  name='State',
-  full_name='pogoprotos.data.battle.BattleLog.State',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='STATE_UNSET', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='ACTIVE', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VICTORY', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='DEFEATED', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='TIMED_OUT', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=468,
-  serialized_end=546,
-)
-_sym_db.RegisterEnumDescriptor(_BATTLELOG_STATE)
-
-_BATTLELOG_BATTLETYPE = _descriptor.EnumDescriptor(
-  name='BattleType',
-  full_name='pogoprotos.data.battle.BattleLog.BattleType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='BATTLE_TYPE_UNSET', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NORMAL', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='TRAINING', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='RAID', index=3, number=3,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=548,
-  serialized_end=619,
-)
-_sym_db.RegisterEnumDescriptor(_BATTLELOG_BATTLETYPE)
 
 
 _BATTLELOG = _descriptor.Descriptor(
@@ -147,8 +83,6 @@ _BATTLELOG = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
-    _BATTLELOG_STATE,
-    _BATTLELOG_BATTLETYPE,
   ],
   options=None,
   is_extendable=False,
@@ -157,14 +91,12 @@ _BATTLELOG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=197,
-  serialized_end=619,
+  serialized_end=466,
 )
 
 _BATTLELOG.fields_by_name['state'].enum_type = pogoprotos_dot_data_dot_battle_dot_battle__state__pb2._BATTLESTATE
 _BATTLELOG.fields_by_name['battle_type'].enum_type = pogoprotos_dot_data_dot_battle_dot_battle__type__pb2._BATTLETYPE
 _BATTLELOG.fields_by_name['battle_actions'].message_type = pogoprotos_dot_data_dot_battle_dot_battle__action__pb2._BATTLEACTION
-_BATTLELOG_STATE.containing_type = _BATTLELOG
-_BATTLELOG_BATTLETYPE.containing_type = _BATTLELOG
 DESCRIPTOR.message_types_by_name['BattleLog'] = _BATTLELOG
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

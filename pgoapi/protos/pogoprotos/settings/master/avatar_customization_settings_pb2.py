@@ -22,77 +22,37 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/settings/master/avatar_customization_settings.proto',
   package='pogoprotos.settings.master',
   syntax='proto3',
-  serialized_pb=_b('\n>pogoprotos/settings/master/avatar_customization_settings.proto\x12\x1apogoprotos.settings.master\x1a/pogoprotos/data/player/player_avatar_type.proto\x1a!pogoprotos/enums/badge_type.proto\x1a\x1bpogoprotos/enums/slot.proto\"\xb9\x07\n\x1b\x41vatarCustomizationSettings\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x12=\n\x0b\x61vatar_type\x18\x02 \x01(\x0e\x32(.pogoprotos.data.player.PlayerAvatarType\x12$\n\x04slot\x18\x03 \x03(\x0e\x32\x16.pogoprotos.enums.Slot\x12\x13\n\x0b\x62undle_name\x18\x04 \x01(\t\x12\x12\n\nasset_name\x18\x05 \x01(\t\x12\x12\n\ngroup_name\x18\x06 \x01(\t\x12\x12\n\nsort_order\x18\x07 \x01(\x05\x12j\n\x0bunlock_type\x18\x08 \x01(\x0e\x32U.pogoprotos.settings.master.AvatarCustomizationSettings.AvatarCustomizationUnlockType\x12h\n\npromo_type\x18\t \x03(\x0e\x32T.pogoprotos.settings.master.AvatarCustomizationSettings.AvatarCustomizationPromoType\x12\x36\n\x11unlock_badge_type\x18\n \x01(\x0e\x32\x1b.pogoprotos.enums.BadgeType\x12\x0f\n\x07iap_sku\x18\x0b \x01(\t\x12\x1a\n\x12unlock_badge_level\x18\x0c \x01(\x05\x12\x11\n\ticon_name\x18\r \x01(\t\x12\x1b\n\x13unlock_player_level\x18\x0e \x01(\x05\"\x9e\x01\n\x04Slot\x12\x0e\n\nUNSET_SLOT\x10\x00\x12\x08\n\x04HAIR\x10\x01\x12\t\n\x05SHIRT\x10\x02\x12\t\n\x05PANTS\x10\x03\x12\x07\n\x03HAT\x10\x04\x12\t\n\x05SHOES\x10\x05\x12\x08\n\x04\x45YES\x10\x06\x12\x0c\n\x08\x42\x41\x43KPACK\x10\x07\x12\n\n\x06GLOVES\x10\x08\x12\t\n\x05SOCKS\x10\t\x12\x08\n\x04\x42\x45LT\x10\n\x12\x0b\n\x07GLASSES\x10\x0b\x12\x0c\n\x08NECKLACE\x10\x0c\"y\n\x1d\x41vatarCustomizationUnlockType\x12\x15\n\x11UNSET_UNLOCK_TYPE\x10\x00\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x01\x12\x10\n\x0cMEDAL_REWARD\x10\x02\x12\x10\n\x0cIAP_CLOTHING\x10\x03\x12\x10\n\x0cLEVEL_REWARD\x10\x04\"L\n\x1c\x41vatarCustomizationPromoType\x12\x14\n\x10UNSET_PROMO_TYPE\x10\x00\x12\x08\n\x04SALE\x10\x01\x12\x0c\n\x08\x46\x45\x41TURED\x10\x02\x62\x06proto3')
+  serialized_pb=_b('\n>pogoprotos/settings/master/avatar_customization_settings.proto\x12\x1apogoprotos.settings.master\x1a/pogoprotos/data/player/player_avatar_type.proto\x1a!pogoprotos/enums/badge_type.proto\x1a\x1bpogoprotos/enums/slot.proto\"\x98\x06\n\x1b\x41vatarCustomizationSettings\x12\x0f\n\x07\x65nabled\x18\x01 \x01(\x08\x12=\n\x0b\x61vatar_type\x18\x02 \x01(\x0e\x32(.pogoprotos.data.player.PlayerAvatarType\x12$\n\x04slot\x18\x03 \x03(\x0e\x32\x16.pogoprotos.enums.Slot\x12\x13\n\x0b\x62undle_name\x18\x04 \x01(\t\x12\x12\n\nasset_name\x18\x05 \x01(\t\x12\x12\n\ngroup_name\x18\x06 \x01(\t\x12\x12\n\nsort_order\x18\x07 \x01(\x05\x12j\n\x0bunlock_type\x18\x08 \x01(\x0e\x32U.pogoprotos.settings.master.AvatarCustomizationSettings.AvatarCustomizationUnlockType\x12h\n\npromo_type\x18\t \x03(\x0e\x32T.pogoprotos.settings.master.AvatarCustomizationSettings.AvatarCustomizationPromoType\x12\x36\n\x11unlock_badge_type\x18\n \x01(\x0e\x32\x1b.pogoprotos.enums.BadgeType\x12\x0f\n\x07iap_sku\x18\x0b \x01(\t\x12\x1a\n\x12unlock_badge_level\x18\x0c \x01(\x05\x12\x11\n\ticon_name\x18\r \x01(\t\x12\x1b\n\x13unlock_player_level\x18\x0e \x01(\x05\"L\n\x1c\x41vatarCustomizationPromoType\x12\x14\n\x10UNSET_PROMO_TYPE\x10\x00\x12\x08\n\x04SALE\x10\x01\x12\x0c\n\x08\x46\x45\x41TURED\x10\x02\"y\n\x1d\x41vatarCustomizationUnlockType\x12\x15\n\x11UNSET_UNLOCK_TYPE\x10\x00\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x01\x12\x10\n\x0cMEDAL_REWARD\x10\x02\x12\x10\n\x0cIAP_CLOTHING\x10\x03\x12\x10\n\x0cLEVEL_REWARD\x10\x04\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_player_dot_player__avatar__type__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_badge__type__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_slot__pb2.DESCRIPTOR,])
 
 
 
-_AVATARCUSTOMIZATIONSETTINGS_SLOT = _descriptor.EnumDescriptor(
-  name='Slot',
-  full_name='pogoprotos.settings.master.AvatarCustomizationSettings.Slot',
+_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE = _descriptor.EnumDescriptor(
+  name='AvatarCustomizationPromoType',
+  full_name='pogoprotos.settings.master.AvatarCustomizationSettings.AvatarCustomizationPromoType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='UNSET_SLOT', index=0, number=0,
+      name='UNSET_PROMO_TYPE', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='HAIR', index=1, number=1,
+      name='SALE', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='SHIRT', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='PANTS', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='HAT', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SHOES', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='EYES', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='BACKPACK', index=7, number=7,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='GLOVES', index=8, number=8,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SOCKS', index=9, number=9,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='BELT', index=10, number=10,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='GLASSES', index=11, number=11,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NECKLACE', index=12, number=12,
+      name='FEATURED', index=2, number=2,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=802,
-  serialized_end=960,
+  serialized_start=801,
+  serialized_end=877,
 )
-_sym_db.RegisterEnumDescriptor(_AVATARCUSTOMIZATIONSETTINGS_SLOT)
+_sym_db.RegisterEnumDescriptor(_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE)
 
 _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE = _descriptor.EnumDescriptor(
   name='AvatarCustomizationUnlockType',
@@ -123,36 +83,10 @@ _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE = _descriptor.EnumDes
   ],
   containing_type=None,
   options=None,
-  serialized_start=962,
-  serialized_end=1083,
+  serialized_start=879,
+  serialized_end=1000,
 )
 _sym_db.RegisterEnumDescriptor(_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE)
-
-_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE = _descriptor.EnumDescriptor(
-  name='AvatarCustomizationPromoType',
-  full_name='pogoprotos.settings.master.AvatarCustomizationSettings.AvatarCustomizationPromoType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='UNSET_PROMO_TYPE', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SALE', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='FEATURED', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=1085,
-  serialized_end=1161,
-)
-_sym_db.RegisterEnumDescriptor(_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE)
 
 
 _AVATARCUSTOMIZATIONSETTINGS = _descriptor.Descriptor(
@@ -265,9 +199,8 @@ _AVATARCUSTOMIZATIONSETTINGS = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
-    _AVATARCUSTOMIZATIONSETTINGS_SLOT,
-    _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE,
     _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE,
+    _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE,
   ],
   options=None,
   is_extendable=False,
@@ -276,7 +209,7 @@ _AVATARCUSTOMIZATIONSETTINGS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=208,
-  serialized_end=1161,
+  serialized_end=1000,
 )
 
 _AVATARCUSTOMIZATIONSETTINGS.fields_by_name['avatar_type'].enum_type = pogoprotos_dot_data_dot_player_dot_player__avatar__type__pb2._PLAYERAVATARTYPE
@@ -284,9 +217,8 @@ _AVATARCUSTOMIZATIONSETTINGS.fields_by_name['slot'].enum_type = pogoprotos_dot_e
 _AVATARCUSTOMIZATIONSETTINGS.fields_by_name['unlock_type'].enum_type = _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE
 _AVATARCUSTOMIZATIONSETTINGS.fields_by_name['promo_type'].enum_type = _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE
 _AVATARCUSTOMIZATIONSETTINGS.fields_by_name['unlock_badge_type'].enum_type = pogoprotos_dot_enums_dot_badge__type__pb2._BADGETYPE
-_AVATARCUSTOMIZATIONSETTINGS_SLOT.containing_type = _AVATARCUSTOMIZATIONSETTINGS
-_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE.containing_type = _AVATARCUSTOMIZATIONSETTINGS
 _AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONPROMOTYPE.containing_type = _AVATARCUSTOMIZATIONSETTINGS
+_AVATARCUSTOMIZATIONSETTINGS_AVATARCUSTOMIZATIONUNLOCKTYPE.containing_type = _AVATARCUSTOMIZATIONSETTINGS
 DESCRIPTOR.message_types_by_name['AvatarCustomizationSettings'] = _AVATARCUSTOMIZATIONSETTINGS
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

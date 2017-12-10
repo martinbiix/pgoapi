@@ -20,33 +20,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/networking/requests/messages/update_notification_message.proto',
   package='pogoprotos.networking.requests.messages',
   syntax='proto3',
-  serialized_pb=_b('\nIpogoprotos/networking/requests/messages/update_notification_message.proto\x12\'pogoprotos.networking.requests.messages\x1a)pogoprotos/enums/notification_state.proto\"\xb8\x01\n\x19UpdateNotificationMessage\x12\x18\n\x10notification_ids\x18\x01 \x03(\t\x12\x1b\n\x13\x63reate_timestamp_ms\x18\x02 \x03(\x03\x12\x32\n\x05state\x18\x03 \x01(\x0e\x32#.pogoprotos.enums.NotificationState\"0\n\x11NotificationState\x12\x0f\n\x0bUNSET_STATE\x10\x00\x12\n\n\x06VIEWED\x10\x01\x62\x06proto3')
+  serialized_pb=_b('\nIpogoprotos/networking/requests/messages/update_notification_message.proto\x12\'pogoprotos.networking.requests.messages\x1a)pogoprotos/enums/notification_state.proto\"\x86\x01\n\x19UpdateNotificationMessage\x12\x18\n\x10notification_ids\x18\x01 \x03(\t\x12\x1b\n\x13\x63reate_timestamp_ms\x18\x02 \x03(\x03\x12\x32\n\x05state\x18\x03 \x01(\x0e\x32#.pogoprotos.enums.NotificationStateb\x06proto3')
   ,
   dependencies=[pogoprotos_dot_enums_dot_notification__state__pb2.DESCRIPTOR,])
 
 
-
-_UPDATENOTIFICATIONMESSAGE_NOTIFICATIONSTATE = _descriptor.EnumDescriptor(
-  name='NotificationState',
-  full_name='pogoprotos.networking.requests.messages.UpdateNotificationMessage.NotificationState',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='UNSET_STATE', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VIEWED', index=1, number=1,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=298,
-  serialized_end=346,
-)
-_sym_db.RegisterEnumDescriptor(_UPDATENOTIFICATIONMESSAGE_NOTIFICATIONSTATE)
 
 
 _UPDATENOTIFICATIONMESSAGE = _descriptor.Descriptor(
@@ -82,7 +60,6 @@ _UPDATENOTIFICATIONMESSAGE = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
-    _UPDATENOTIFICATIONMESSAGE_NOTIFICATIONSTATE,
   ],
   options=None,
   is_extendable=False,
@@ -91,11 +68,10 @@ _UPDATENOTIFICATIONMESSAGE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=162,
-  serialized_end=346,
+  serialized_end=296,
 )
 
 _UPDATENOTIFICATIONMESSAGE.fields_by_name['state'].enum_type = pogoprotos_dot_enums_dot_notification__state__pb2._NOTIFICATIONSTATE
-_UPDATENOTIFICATIONMESSAGE_NOTIFICATIONSTATE.containing_type = _UPDATENOTIFICATIONMESSAGE
 DESCRIPTOR.message_types_by_name['UpdateNotificationMessage'] = _UPDATENOTIFICATIONMESSAGE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

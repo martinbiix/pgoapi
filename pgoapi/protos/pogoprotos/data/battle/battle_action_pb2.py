@@ -22,69 +22,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/data/battle/battle_action.proto',
   package='pogoprotos.data.battle',
   syntax='proto3',
-  serialized_pb=_b('\n*pogoprotos/data/battle/battle_action.proto\x12\x16pogoprotos.data.battle\x1a+pogoprotos/data/battle/battle_results.proto\x1a/pogoprotos/data/battle/battle_action_type.proto\x1a/pogoprotos/data/battle/battle_participant.proto\"\xaf\x05\n\x0c\x42\x61ttleAction\x12\x36\n\x04type\x18\x01 \x01(\x0e\x32(.pogoprotos.data.battle.BattleActionType\x12\x17\n\x0f\x61\x63tion_start_ms\x18\x02 \x01(\x03\x12\x13\n\x0b\x64uration_ms\x18\x03 \x01(\x05\x12\x14\n\x0c\x65nergy_delta\x18\x05 \x01(\x05\x12\x16\n\x0e\x61ttacker_index\x18\x06 \x01(\x05\x12\x14\n\x0ctarget_index\x18\x07 \x01(\x05\x12\x19\n\x11\x61\x63tive_pokemon_id\x18\x08 \x01(\x06\x12@\n\rplayer_joined\x18\t \x01(\x0b\x32).pogoprotos.data.battle.BattleParticipant\x12=\n\x0e\x62\x61ttle_results\x18\n \x01(\x0b\x32%.pogoprotos.data.battle.BattleResults\x12)\n!damage_windows_start_timestamp_ms\x18\x0b \x01(\x03\x12\'\n\x1f\x64\x61mage_windows_end_timestamp_ms\x18\x0c \x01(\x03\x12>\n\x0bplayer_left\x18\r \x01(\x0b\x32).pogoprotos.data.battle.BattleParticipant\x12\x19\n\x11target_pokemon_id\x18\x0e \x01(\x06\"\xa9\x01\n\nActionType\x12\t\n\x05UNSET\x10\x00\x12\n\n\x06\x41TTACK\x10\x01\x12\t\n\x05\x44ODGE\x10\x02\x12\x12\n\x0eSPECIAL_ATTACK\x10\x03\x12\x10\n\x0cSWAP_POKEMON\x10\x04\x12\t\n\x05\x46\x41INT\x10\x05\x12\x0f\n\x0bPLAYER_JOIN\x10\x06\x12\x0f\n\x0bPLAYER_QUIT\x10\x07\x12\x0b\n\x07VICTORY\x10\x08\x12\n\n\x06\x44\x45\x46\x45\x41T\x10\t\x12\r\n\tTIMED_OUT\x10\nb\x06proto3')
+  serialized_pb=_b('\n*pogoprotos/data/battle/battle_action.proto\x12\x16pogoprotos.data.battle\x1a+pogoprotos/data/battle/battle_results.proto\x1a/pogoprotos/data/battle/battle_action_type.proto\x1a/pogoprotos/data/battle/battle_participant.proto\"\x83\x04\n\x0c\x42\x61ttleAction\x12\x36\n\x04type\x18\x01 \x01(\x0e\x32(.pogoprotos.data.battle.BattleActionType\x12\x17\n\x0f\x61\x63tion_start_ms\x18\x02 \x01(\x03\x12\x13\n\x0b\x64uration_ms\x18\x03 \x01(\x05\x12\x14\n\x0c\x65nergy_delta\x18\x05 \x01(\x05\x12\x16\n\x0e\x61ttacker_index\x18\x06 \x01(\x05\x12\x14\n\x0ctarget_index\x18\x07 \x01(\x05\x12\x19\n\x11\x61\x63tive_pokemon_id\x18\x08 \x01(\x06\x12@\n\rplayer_joined\x18\t \x01(\x0b\x32).pogoprotos.data.battle.BattleParticipant\x12=\n\x0e\x62\x61ttle_results\x18\n \x01(\x0b\x32%.pogoprotos.data.battle.BattleResults\x12)\n!damage_windows_start_timestamp_ms\x18\x0b \x01(\x03\x12\'\n\x1f\x64\x61mage_windows_end_timestamp_ms\x18\x0c \x01(\x03\x12>\n\x0bplayer_left\x18\r \x01(\x0b\x32).pogoprotos.data.battle.BattleParticipant\x12\x19\n\x11target_pokemon_id\x18\x0e \x01(\x06\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_battle_dot_battle__results__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_battle_dot_battle__action__type__pb2.DESCRIPTOR,pogoprotos_dot_data_dot_battle_dot_battle__participant__pb2.DESCRIPTOR,])
 
 
-
-_BATTLEACTION_ACTIONTYPE = _descriptor.EnumDescriptor(
-  name='ActionType',
-  full_name='pogoprotos.data.battle.BattleAction.ActionType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='UNSET', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='ATTACK', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='DODGE', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SPECIAL_ATTACK', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SWAP_POKEMON', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='FAINT', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='PLAYER_JOIN', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='PLAYER_QUIT', index=7, number=7,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VICTORY', index=8, number=8,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='DEFEAT', index=9, number=9,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='TIMED_OUT', index=10, number=10,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=732,
-  serialized_end=901,
-)
-_sym_db.RegisterEnumDescriptor(_BATTLEACTION_ACTIONTYPE)
 
 
 _BATTLEACTION = _descriptor.Descriptor(
@@ -190,7 +132,6 @@ _BATTLEACTION = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
-    _BATTLEACTION_ACTIONTYPE,
   ],
   options=None,
   is_extendable=False,
@@ -199,14 +140,13 @@ _BATTLEACTION = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=214,
-  serialized_end=901,
+  serialized_end=729,
 )
 
 _BATTLEACTION.fields_by_name['type'].enum_type = pogoprotos_dot_data_dot_battle_dot_battle__action__type__pb2._BATTLEACTIONTYPE
 _BATTLEACTION.fields_by_name['player_joined'].message_type = pogoprotos_dot_data_dot_battle_dot_battle__participant__pb2._BATTLEPARTICIPANT
 _BATTLEACTION.fields_by_name['battle_results'].message_type = pogoprotos_dot_data_dot_battle_dot_battle__results__pb2._BATTLERESULTS
 _BATTLEACTION.fields_by_name['player_left'].message_type = pogoprotos_dot_data_dot_battle_dot_battle__participant__pb2._BATTLEPARTICIPANT
-_BATTLEACTION_ACTIONTYPE.containing_type = _BATTLEACTION
 DESCRIPTOR.message_types_by_name['BattleAction'] = _BATTLEACTION
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

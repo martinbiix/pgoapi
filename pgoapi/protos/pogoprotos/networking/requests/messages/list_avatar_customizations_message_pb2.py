@@ -22,119 +22,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pogoprotos/networking/requests/messages/list_avatar_customizations_message.proto',
   package='pogoprotos.networking.requests.messages',
   syntax='proto3',
-  serialized_pb=_b('\nPpogoprotos/networking/requests/messages/list_avatar_customizations_message.proto\x12\'pogoprotos.networking.requests.messages\x1a/pogoprotos/data/player/player_avatar_type.proto\x1a\x1bpogoprotos/enums/slot.proto\x1a\x1dpogoprotos/enums/filter.proto\"\xd5\x03\n\x1fListAvatarCustomizationsMessage\x12=\n\x0b\x61vatar_type\x18\x01 \x01(\x0e\x32(.pogoprotos.data.player.PlayerAvatarType\x12$\n\x04slot\x18\x02 \x03(\x0e\x32\x16.pogoprotos.enums.Slot\x12)\n\x07\x66ilters\x18\x03 \x03(\x0e\x32\x18.pogoprotos.enums.Filter\x12\r\n\x05start\x18\x04 \x01(\x05\x12\r\n\x05limit\x18\x05 \x01(\x05\"\x9e\x01\n\x04Slot\x12\x0e\n\nUNSET_SLOT\x10\x00\x12\x08\n\x04HAIR\x10\x01\x12\t\n\x05SHIRT\x10\x02\x12\t\n\x05PANTS\x10\x03\x12\x07\n\x03HAT\x10\x04\x12\t\n\x05SHOES\x10\x05\x12\x08\n\x04\x45YES\x10\x06\x12\x0c\n\x08\x42\x41\x43KPACK\x10\x07\x12\n\n\x06GLOVES\x10\x08\x12\t\n\x05SOCKS\x10\t\x12\x08\n\x04\x42\x45LT\x10\n\x12\x0b\n\x07GLASSES\x10\x0b\x12\x0c\n\x08NECKLACE\x10\x0c\"c\n\x06\x46ilter\x12\t\n\x05UNSET\x10\x00\x12\x07\n\x03\x41LL\x10\x01\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x02\x12\t\n\x05OWNED\x10\x03\x12\x0c\n\x08\x46\x45\x41TURED\x10\x04\x12\x0f\n\x0bPURCHASABLE\x10\x05\x12\x0e\n\nUNLOCKABLE\x10\x06\x62\x06proto3')
+  serialized_pb=_b('\nPpogoprotos/networking/requests/messages/list_avatar_customizations_message.proto\x12\'pogoprotos.networking.requests.messages\x1a/pogoprotos/data/player/player_avatar_type.proto\x1a\x1bpogoprotos/enums/slot.proto\x1a\x1dpogoprotos/enums/filter.proto\"\xcf\x01\n\x1fListAvatarCustomizationsMessage\x12=\n\x0b\x61vatar_type\x18\x01 \x01(\x0e\x32(.pogoprotos.data.player.PlayerAvatarType\x12$\n\x04slot\x18\x02 \x03(\x0e\x32\x16.pogoprotos.enums.Slot\x12)\n\x07\x66ilters\x18\x03 \x03(\x0e\x32\x18.pogoprotos.enums.Filter\x12\r\n\x05start\x18\x04 \x01(\x05\x12\r\n\x05limit\x18\x05 \x01(\x05\x62\x06proto3')
   ,
   dependencies=[pogoprotos_dot_data_dot_player_dot_player__avatar__type__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_slot__pb2.DESCRIPTOR,pogoprotos_dot_enums_dot_filter__pb2.DESCRIPTOR,])
 
 
-
-_LISTAVATARCUSTOMIZATIONSMESSAGE_SLOT = _descriptor.EnumDescriptor(
-  name='Slot',
-  full_name='pogoprotos.networking.requests.messages.ListAvatarCustomizationsMessage.Slot',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='UNSET_SLOT', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='HAIR', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SHIRT', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='PANTS', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='HAT', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SHOES', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='EYES', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='BACKPACK', index=7, number=7,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='GLOVES', index=8, number=8,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SOCKS', index=9, number=9,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='BELT', index=10, number=10,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='GLASSES', index=11, number=11,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NECKLACE', index=12, number=12,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=445,
-  serialized_end=603,
-)
-_sym_db.RegisterEnumDescriptor(_LISTAVATARCUSTOMIZATIONSMESSAGE_SLOT)
-
-_LISTAVATARCUSTOMIZATIONSMESSAGE_FILTER = _descriptor.EnumDescriptor(
-  name='Filter',
-  full_name='pogoprotos.networking.requests.messages.ListAvatarCustomizationsMessage.Filter',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='UNSET', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='ALL', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='DEFAULT', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='OWNED', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='FEATURED', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='PURCHASABLE', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='UNLOCKABLE', index=6, number=6,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=605,
-  serialized_end=704,
-)
-_sym_db.RegisterEnumDescriptor(_LISTAVATARCUSTOMIZATIONSMESSAGE_FILTER)
 
 
 _LISTAVATARCUSTOMIZATIONSMESSAGE = _descriptor.Descriptor(
@@ -184,8 +76,6 @@ _LISTAVATARCUSTOMIZATIONSMESSAGE = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
-    _LISTAVATARCUSTOMIZATIONSMESSAGE_SLOT,
-    _LISTAVATARCUSTOMIZATIONSMESSAGE_FILTER,
   ],
   options=None,
   is_extendable=False,
@@ -194,14 +84,12 @@ _LISTAVATARCUSTOMIZATIONSMESSAGE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=235,
-  serialized_end=704,
+  serialized_end=442,
 )
 
 _LISTAVATARCUSTOMIZATIONSMESSAGE.fields_by_name['avatar_type'].enum_type = pogoprotos_dot_data_dot_player_dot_player__avatar__type__pb2._PLAYERAVATARTYPE
 _LISTAVATARCUSTOMIZATIONSMESSAGE.fields_by_name['slot'].enum_type = pogoprotos_dot_enums_dot_slot__pb2._SLOT
 _LISTAVATARCUSTOMIZATIONSMESSAGE.fields_by_name['filters'].enum_type = pogoprotos_dot_enums_dot_filter__pb2._FILTER
-_LISTAVATARCUSTOMIZATIONSMESSAGE_SLOT.containing_type = _LISTAVATARCUSTOMIZATIONSMESSAGE
-_LISTAVATARCUSTOMIZATIONSMESSAGE_FILTER.containing_type = _LISTAVATARCUSTOMIZATIONSMESSAGE
 DESCRIPTOR.message_types_by_name['ListAvatarCustomizationsMessage'] = _LISTAVATARCUSTOMIZATIONSMESSAGE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
